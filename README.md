@@ -4,6 +4,8 @@
 
 
 ## Entregables:
+Figma: https://www.figma.com/file/Pl0Y4TN6BoaVde7agRayws/RoomReserve?type=design&node-id=0-1&t=zz1oeYpdpQhcNOFu-0
+<br>
 Prototipo Figma : https://www.figma.com/proto/Pl0Y4TN6BoaVde7agRayws/RoomReserve?type=design&node-id=5-2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A2
 <br>
 Documento del proyecto: 
@@ -12,8 +14,7 @@ Video:https://youtu.be/kFNt0XmfqKI
 <br>
 Presentacion: 
 <br>
-Figma: https://www.figma.com/file/Pl0Y4TN6BoaVde7agRayws/RoomReserve?type=design&node-id=0-1&t=zz1oeYpdpQhcNOFu-0
-<br>
+
 
 ## Tecnologías utilizadas
 Flutter

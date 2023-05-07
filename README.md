@@ -39,7 +39,7 @@ Cómo generar beneficios para las personas que promueven hoteles y hospedaje en 
 Made: Polygonscan
 ERC20
 <br>
-- [https://mumbai.polygonscan.com/address/0xB88452FeA584f62e7B25Eb2488Ab6c5E10454553 ](https://mumbai.polygonscan.com/token/0x21117b0ac459482b091904d279af1cd430447547
+- https://mumbai.polygonscan.com/token/0x21117b0ac459482b091904d279af1cd430447547
 Pagina del Token RRCoin)
 - https://mumbai.polygonscan.com/address/0x21117b0ac459482b091904d279af1cd430447547
 Pagina del Smart Contract para crear RRCoin

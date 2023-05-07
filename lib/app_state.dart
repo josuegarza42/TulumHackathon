@@ -74,6 +74,18 @@ class FFAppState extends ChangeNotifier {
   set visible3(bool _value) {
     _visible3 = _value;
   }
+
+  bool _visible4 = false;
+  bool get visible4 => _visible4;
+  set visible4(bool _value) {
+    _visible4 = _value;
+  }
+
+  bool _visible5 = false;
+  bool get visible5 => _visible5;
+  set visible5(bool _value) {
+    _visible5 = _value;
+  }
 }
 
 LatLng? _latLngFromString(String? val) {

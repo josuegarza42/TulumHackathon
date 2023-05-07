@@ -1,5 +1,6 @@
 import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
+import '/flutter_flow/flutter_flow_credit_card_form.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -34,6 +35,8 @@ class _ReferidoCopyWidgetState extends State<ReferidoCopyWidget>
   var hasColumnTriggered1 = false;
   var hasColumnTriggered2 = false;
   var hasColumnTriggered3 = false;
+  var hasColumnTriggered4 = false;
+  var hasColumnTriggered5 = false;
   final animationsMap = {
     'columnOnActionTriggerAnimation1': AnimationInfo(
       trigger: AnimationTrigger.onActionTrigger,
@@ -74,6 +77,32 @@ class _ReferidoCopyWidgetState extends State<ReferidoCopyWidget>
         ),
       ],
     ),
+    'columnOnActionTriggerAnimation4': AnimationInfo(
+      trigger: AnimationTrigger.onActionTrigger,
+      applyInitialState: false,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+      ],
+    ),
+    'columnOnActionTriggerAnimation5': AnimationInfo(
+      trigger: AnimationTrigger.onActionTrigger,
+      applyInitialState: false,
+      effects: [
+        FadeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 600.ms,
+          begin: 0.0,
+          end: 1.0,
+        ),
+      ],
+    ),
   };
 
   @override
@@ -82,6 +111,7 @@ class _ReferidoCopyWidgetState extends State<ReferidoCopyWidget>
     _model = createModel(context, () => ReferidoCopyModel());
 
     _model.nombreFieldController ??= TextEditingController();
+    _model.textController2 ??= TextEditingController();
     setupAnimations(
       animationsMap.values.where((anim) =>
           anim.trigger == AnimationTrigger.onActionTrigger ||
@@ -1281,6 +1311,15 @@ class _ReferidoCopyWidgetState extends State<ReferidoCopyWidget>
                           .controller
                           .stop();
                     }
+                    setState(() {
+                      FFAppState().visible4 = true;
+                    });
+                    if (animationsMap['columnOnActionTriggerAnimation4'] !=
+                        null) {
+                      animationsMap['columnOnActionTriggerAnimation4']!
+                          .controller
+                          .stop();
+                    }
                   },
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -1304,6 +1343,355 @@ class _ReferidoCopyWidgetState extends State<ReferidoCopyWidget>
                 ).animateOnActionTrigger(
                     animationsMap['columnOnActionTriggerAnimation3']!,
                     hasBeenTriggered: hasColumnTriggered3),
+              if (FFAppState().visible4 == true)
+                Column(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Stack(
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width * 1.0,
+                          height: MediaQuery.of(context).size.height * 1.0,
+                          decoration: BoxDecoration(
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              30.0, 0.0, 0.0, 0.0),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width * 1.0,
+                            height: MediaQuery.of(context).size.height * 1.0,
+                            decoration: BoxDecoration(
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
+                            ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Container(
+                                  width:
+                                      MediaQuery.of(context).size.width * 1.0,
+                                  height:
+                                      MediaQuery.of(context).size.height * 0.1,
+                                  constraints: BoxConstraints(
+                                    maxWidth:
+                                        MediaQuery.of(context).size.width * 1.0,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryBackground,
+                                  ),
+                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  child: Text(
+                                    'Pago',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Poppins',
+                                          fontSize: 28.0,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                  ),
+                                ),
+                                Container(
+                                  width: 100.0,
+                                  height: 100.0,
+                                  decoration: BoxDecoration(
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryBackground,
+                                  ),
+                                ),
+                                Container(
+                                  width:
+                                      MediaQuery.of(context).size.width * 1.0,
+                                  height:
+                                      MediaQuery.of(context).size.height * 0.35,
+                                  decoration: BoxDecoration(
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryBackground,
+                                  ),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            12.0, 0.0, 12.0, 0.0),
+                                        child: FlutterFlowCreditCardForm(
+                                          formKey: _model.creditCardFormKey,
+                                          creditCardModel:
+                                              _model.creditCardInfo,
+                                          obscureNumber: false,
+                                          obscureCvv: false,
+                                          spacing: 10.0,
+                                          textStyle: GoogleFonts.getFont(
+                                            'Poppins',
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
+                                            fontWeight: FontWeight.normal,
+                                            fontSize: 14.0,
+                                          ),
+                                          inputDecoration: InputDecoration(
+                                            enabledBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .accent1,
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(4.0),
+                                            ),
+                                            focusedBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .accent1,
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(4.0),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      Align(
+                                        alignment:
+                                            AlignmentDirectional(0.0, -1.0),
+                                        child: Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  10.0, 0.0, 0.0, 0.0),
+                                          child: Container(
+                                            width: MediaQuery.of(context)
+                                                    .size
+                                                    .width *
+                                                1.0,
+                                            height: MediaQuery.of(context)
+                                                    .size
+                                                    .height *
+                                                0.05,
+                                            constraints: BoxConstraints(
+                                              maxWidth: MediaQuery.of(context)
+                                                      .size
+                                                      .width *
+                                                  1.0,
+                                            ),
+                                            decoration: BoxDecoration(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryBackground,
+                                            ),
+                                            child: Align(
+                                              alignment: AlignmentDirectional(
+                                                  -1.0, 0.0),
+                                              child: Text(
+                                                'Nombre completo ',
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Poppins',
+                                                          fontSize: 20.0,
+                                                        ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      Container(
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                0.87,
+                                        child: TextFormField(
+                                          controller: _model.textController2,
+                                          autofocus: true,
+                                          obscureText: false,
+                                          decoration: InputDecoration(
+                                            hintText:
+                                                'Nombre del dueño de la tarjeta',
+                                            hintStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodySmall
+                                                    .override(
+                                                      fontFamily: 'Poppins',
+                                                      color: Color(0xFF262A2C),
+                                                    ),
+                                            enabledBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Colors.black,
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(5.0),
+                                            ),
+                                            focusedBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0x00000000),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(5.0),
+                                            ),
+                                            errorBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0x00000000),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(5.0),
+                                            ),
+                                            focusedErrorBorder:
+                                                OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0x00000000),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(5.0),
+                                            ),
+                                            contentPadding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    10.0, 0.0, 0.0, 0.0),
+                                          ),
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium,
+                                          validator: _model
+                                              .textController2Validator
+                                              .asValidator(context),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  width:
+                                      MediaQuery.of(context).size.width * 1.0,
+                                  height:
+                                      MediaQuery.of(context).size.height * 0.35,
+                                  decoration: BoxDecoration(
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryBackground,
+                                  ),
+                                  child: Align(
+                                    alignment: AlignmentDirectional(0.0, -1.0),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      children: [
+                                        FFButtonWidget(
+                                          onPressed: () async {
+                                            setState(() {
+                                              FFAppState().visible4 = false;
+                                            });
+                                            if (animationsMap[
+                                                    'columnOnActionTriggerAnimation4'] !=
+                                                null) {
+                                              animationsMap[
+                                                      'columnOnActionTriggerAnimation4']!
+                                                  .controller
+                                                  .stop();
+                                            }
+                                            setState(() {
+                                              FFAppState().visible5 = true;
+                                            });
+                                            if (animationsMap[
+                                                    'columnOnActionTriggerAnimation5'] !=
+                                                null) {
+                                              setState(() =>
+                                                  hasColumnTriggered5 = true);
+                                              SchedulerBinding.instance
+                                                  .addPostFrameCallback((_) async =>
+                                                      await animationsMap[
+                                                              'columnOnActionTriggerAnimation5']!
+                                                          .controller
+                                                          .forward(from: 0.0));
+                                            }
+                                          },
+                                          text: 'Confirmar Pago',
+                                          options: FFButtonOptions(
+                                            width: 300.0,
+                                            height: 40.0,
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 0.0, 0.0),
+                                            iconPadding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 0.0, 0.0, 0.0),
+                                            color: Color(0xFFF26600),
+                                            textStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmall
+                                                    .override(
+                                                      fontFamily: 'Poppins',
+                                                      color: Colors.white,
+                                                    ),
+                                            borderSide: BorderSide(
+                                              color: Colors.transparent,
+                                              width: 1.0,
+                                            ),
+                                            borderRadius:
+                                                BorderRadius.circular(4.0),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ).animateOnActionTrigger(
+                    animationsMap['columnOnActionTriggerAnimation4']!,
+                    hasBeenTriggered: hasColumnTriggered4),
+              if (FFAppState().visible5 == true)
+                InkWell(
+                  splashColor: Colors.transparent,
+                  focusColor: Colors.transparent,
+                  hoverColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () async {
+                    setState(() {
+                      FFAppState().visible5 = false;
+                    });
+                    if (animationsMap['columnOnActionTriggerAnimation5'] !=
+                        null) {
+                      animationsMap['columnOnActionTriggerAnimation5']!
+                          .controller
+                          .stop();
+                    }
+                  },
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Stack(
+                        children: [
+                          Container(
+                            width: MediaQuery.of(context).size.width * 1.0,
+                            height: MediaQuery.of(context).size.height * 1.0,
+                            decoration: BoxDecoration(
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
+                              image: DecorationImage(
+                                fit: BoxFit.cover,
+                                image: Image.asset(
+                                  'assets/images/pagos_4.png',
+                                ).image,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ).animateOnActionTrigger(
+                    animationsMap['columnOnActionTriggerAnimation5']!,
+                    hasBeenTriggered: hasColumnTriggered5),
             ],
           ),
         ),

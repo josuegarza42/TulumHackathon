@@ -81,11 +81,11 @@ class _GananciasWidgetState extends State<GananciasWidget> {
                                 buttonSize: 60.0,
                                 icon: Icon(
                                   Icons.arrow_back_rounded,
-                                  color: Color(0xFF181818),
-                                  size: 60.0,
+                                  color: Color(0xFFF05600),
+                                  size: 50.0,
                                 ),
-                                onPressed: () {
-                                  print('IconButton pressed ...');
+                                onPressed: () async {
+                                  context.pushNamed('InicioHotelCopy');
                                 },
                               ),
                             ),
@@ -174,6 +174,86 @@ class _GananciasWidgetState extends State<GananciasWidget> {
                           ),
                         ],
                       ),
+                    ),
+                    Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(30.0, 30.0, 0.0, 0.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Text(
+                            'Mi Balance',
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Poppins',
+                                  color: Color(0xFFF05600),
+                                  fontSize: 26.0,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width * 0.9,
+                          height: 100.0,
+                          decoration: BoxDecoration(
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
+                          ),
+                          child: Image.asset(
+                            'assets/images/Group_705.png',
+                            width: 100.0,
+                            height: 100.0,
+                            fit: BoxFit.fitWidth,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(30.0, 0.0, 0.0, 0.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Text(
+                            'Transacciones Recientes',
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Poppins',
+                                  color: Color(0xFFF05600),
+                                  fontSize: 18.0,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width * 0.9,
+                          height: 355.0,
+                          decoration: BoxDecoration(
+                            color: FlutterFlowTheme.of(context)
+                                .secondaryBackground,
+                          ),
+                          child: Image.asset(
+                            'assets/images/Group_706.png',
+                            width: 100.0,
+                            height: 100.0,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),

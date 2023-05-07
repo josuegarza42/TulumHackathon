@@ -262,14 +262,14 @@ class _CreaHotelWidgetState extends State<CreaHotelWidget> {
                                                         MainAxisSize.max,
                                                     children: [
                                                       Text(
-                                                        'Plan A hipertension',
+                                                        'Luz Maria',
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
                                                                 .bodyLarge,
                                                       ),
                                                       Text(
-                                                        'por ',
+                                                        'Avenida los alpes',
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)

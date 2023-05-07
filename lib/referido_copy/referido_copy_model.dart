@@ -1,5 +1,6 @@
 import '/backend/api_requests/api_calls.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
+import '/flutter_flow/flutter_flow_credit_card_form.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -16,6 +17,12 @@ class ReferidoCopyModel extends FlutterFlowModel {
   // State field(s) for nombreField widget.
   TextEditingController? nombreFieldController;
   String? Function(BuildContext, String?)? nombreFieldControllerValidator;
+  // State field(s) for CreditCardForm widget.
+  final creditCardFormKey = GlobalKey<FormState>();
+  CreditCardModel creditCardInfo = emptyCreditCard();
+  // State field(s) for TextField widget.
+  TextEditingController? textController2;
+  String? Function(BuildContext, String?)? textController2Validator;
 
   /// Initialization and disposal methods.
 
@@ -23,6 +30,7 @@ class ReferidoCopyModel extends FlutterFlowModel {
 
   void dispose() {
     nombreFieldController?.dispose();
+    textController2?.dispose();
   }
 
   /// Additional helper methods are added here.

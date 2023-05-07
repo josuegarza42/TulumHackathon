@@ -758,16 +758,25 @@ class _InicioHotelCopy2WidgetState extends State<InicioHotelCopy2Widget>
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       5.0, 0.0, 0.0, 0.0),
-                                  child: Text(
-                                    'Perfil',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Poppins',
-                                          color: Color(0xFF222222),
-                                          fontSize: 16.0,
-                                          fontWeight: FontWeight.w600,
-                                        ),
+                                  child: InkWell(
+                                    splashColor: Colors.transparent,
+                                    focusColor: Colors.transparent,
+                                    hoverColor: Colors.transparent,
+                                    highlightColor: Colors.transparent,
+                                    onTap: () async {
+                                      context.pushNamed('Perfil');
+                                    },
+                                    child: Text(
+                                      'Perfil',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            color: Color(0xFF222222),
+                                            fontSize: 16.0,
+                                            fontWeight: FontWeight.w600,
+                                          ),
+                                    ),
                                   ),
                                 ),
                               ],
@@ -923,19 +932,92 @@ class _InicioHotelCopy2WidgetState extends State<InicioHotelCopy2Widget>
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       5.0, 0.0, 0.0, 0.0),
-                                  child: Text(
-                                    'Ganancias',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Poppins',
-                                          color: Color(0xFF222222),
-                                          fontSize: 16.0,
-                                          fontWeight: FontWeight.w600,
-                                        ),
+                                  child: InkWell(
+                                    splashColor: Colors.transparent,
+                                    focusColor: Colors.transparent,
+                                    hoverColor: Colors.transparent,
+                                    highlightColor: Colors.transparent,
+                                    onTap: () async {
+                                      context.pushNamed('Ganancias');
+                                    },
+                                    child: Text(
+                                      'Ganancias',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            color: Color(0xFF222222),
+                                            fontSize: 16.0,
+                                            fontWeight: FontWeight.w600,
+                                          ),
+                                    ),
                                   ),
                                 ),
                               ],
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 5.0, 0.0, 5.0),
+                          child: InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              context.pushNamed('Crea_Hotel');
+                            },
+                            child: Container(
+                              width: MediaQuery.of(context).size.width * 1.0,
+                              height: MediaQuery.of(context).size.height * 0.05,
+                              decoration: BoxDecoration(
+                                color: FlutterFlowTheme.of(context)
+                                    .secondaryBackground,
+                              ),
+                              alignment: AlignmentDirectional(
+                                  0.10000000000000009, 0.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Align(
+                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    child: ToggleIcon(
+                                      onPressed: () async {
+                                        setState(() => FFAppState().isHotelero =
+                                            !FFAppState().isHotelero);
+                                      },
+                                      value: FFAppState().isHotelero,
+                                      onIcon: FaIcon(
+                                        FontAwesomeIcons.tags,
+                                        color: Color(0xFFF26600),
+                                        size: 25.0,
+                                      ),
+                                      offIcon: FaIcon(
+                                        FontAwesomeIcons.hotel,
+                                        color: Color(0xFFF26600),
+                                        size: 25.0,
+                                      ),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        5.0, 0.0, 0.0, 0.0),
+                                    child: Text(
+                                      'Registrar Hotel',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            color: Color(0xFF222222),
+                                            fontSize: 16.0,
+                                            fontWeight: FontWeight.w600,
+                                          ),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),

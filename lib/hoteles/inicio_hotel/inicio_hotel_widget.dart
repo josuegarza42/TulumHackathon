@@ -953,46 +953,55 @@ class _InicioHotelWidgetState extends State<InicioHotelWidget>
                             ),
                             alignment:
                                 AlignmentDirectional(0.10000000000000009, 0.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
-                                  child: ToggleIcon(
-                                    onPressed: () async {
-                                      setState(() => FFAppState().isHotelero =
-                                          !FFAppState().isHotelero);
-                                    },
-                                    value: FFAppState().isHotelero,
-                                    onIcon: FaIcon(
-                                      FontAwesomeIcons.tags,
-                                      color: Color(0xFFF26600),
-                                      size: 25.0,
-                                    ),
-                                    offIcon: Icon(
-                                      Icons.account_balance_wallet_rounded,
-                                      color: Color(0xFFF26600),
-                                      size: 25.0,
+                            child: InkWell(
+                              splashColor: Colors.transparent,
+                              focusColor: Colors.transparent,
+                              hoverColor: Colors.transparent,
+                              highlightColor: Colors.transparent,
+                              onTap: () async {
+                                context.pushNamed('Ganancias');
+                              },
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Align(
+                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    child: ToggleIcon(
+                                      onPressed: () async {
+                                        setState(() => FFAppState().isHotelero =
+                                            !FFAppState().isHotelero);
+                                      },
+                                      value: FFAppState().isHotelero,
+                                      onIcon: FaIcon(
+                                        FontAwesomeIcons.tags,
+                                        color: Color(0xFFF26600),
+                                        size: 25.0,
+                                      ),
+                                      offIcon: Icon(
+                                        Icons.account_balance_wallet_rounded,
+                                        color: Color(0xFFF26600),
+                                        size: 25.0,
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      5.0, 0.0, 0.0, 0.0),
-                                  child: Text(
-                                    'Ganancias',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Poppins',
-                                          color: Color(0xFF222222),
-                                          fontSize: 16.0,
-                                          fontWeight: FontWeight.w600,
-                                        ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        5.0, 0.0, 0.0, 0.0),
+                                    child: Text(
+                                      'Ganancias',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Poppins',
+                                            color: Color(0xFF222222),
+                                            fontSize: 16.0,
+                                            fontWeight: FontWeight.w600,
+                                          ),
+                                    ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -1003,7 +1012,7 @@ class _InicioHotelWidgetState extends State<InicioHotelWidget>
                                 0.0, 5.0, 0.0, 5.0),
                             child: Container(
                               width: MediaQuery.of(context).size.width * 1.0,
-                              height: MediaQuery.of(context).size.height * 0.9,
+                              height: MediaQuery.of(context).size.height * 0.85,
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,

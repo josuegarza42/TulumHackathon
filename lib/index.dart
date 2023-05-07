@@ -9,16 +9,12 @@ export '/perfil/perfil_copy/perfil_copy_widget.dart' show PerfilCopyWidget;
 export '/registrate/registrate_p1/registrate_p1_widget.dart'
     show RegistrateP1Widget;
 export '/registrate/hotelero_p3/hotelero_p3_widget.dart' show HoteleroP3Widget;
-export '/hoteles/inicio_hotel/inicio_hotel_widget.dart' show InicioHotelWidget;
 export '/registrate/registratefinal/registratefinal_widget.dart'
     show RegistratefinalWidget;
 export '/crea_hotel/crea_hotel_widget.dart' show CreaHotelWidget;
 export '/pago/pago_widget.dart' show PagoWidget;
-export '/hoteles/hoteles_widget.dart' show HotelesWidget;
 export '/ganancias/ganancias_widget.dart' show GananciasWidget;
 export '/detalles/detalles_widget.dart' show DetallesWidget;
-export '/hoteles/inicio_hotel_copy/inicio_hotel_copy_widget.dart'
-    show InicioHotelCopyWidget;
 export '/referido/referido_widget.dart' show ReferidoWidget;
 export '/hoteles/inicio_hotel_copy2/inicio_hotel_copy2_widget.dart'
     show InicioHotelCopy2Widget;

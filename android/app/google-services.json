@@ -7,14 +7,22 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:939597793930:android:539eb6fb76efda8b35fb73",
+        "mobilesdk_app_id": "1:939597793930:android:f5881ac8eec8544335fb73",
         "android_client_info": {
-          "package_name": "com.mycompany.hostel"
+          "package_name": "Hostel.cero"
         }
       },
       "oauth_client": [
         {
-          "client_id": "939597793930-hnr0grm6gv4bcuaqfce836fmh8n260f2.apps.googleusercontent.com",
+          "client_id": "939597793930-kejkjs5hg9hpfe2v4s117l1l6kv4g12q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "Hostel.cero",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "939597793930-odrqj22t58igl04hlfv1aia6og5kft1n.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -31,10 +39,46 @@
               "client_type": 3
             },
             {
-              "client_id": "939597793930-utj89at388b8bvj9umcvb2ai6d34r9uh.apps.googleusercontent.com",
+              "client_id": "939597793930-8q8gkjmqusj8qgebqtv83s2pds0llv2r.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.mycompany.hostel"
+                "bundle_id": "Hostel1.0"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939597793930:android:539eb6fb76efda8b35fb73",
+        "android_client_info": {
+          "package_name": "com.mycompany.hostel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939597793930-odrqj22t58igl04hlfv1aia6og5kft1n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZaIDfye5_huqv9p7qrMh-vAQIzhiTUK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939597793930-hnr0grm6gv4bcuaqfce836fmh8n260f2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939597793930-8q8gkjmqusj8qgebqtv83s2pds0llv2r.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Hostel1.0"
               }
             }
           ]

@@ -85,7 +85,7 @@ class _GananciasWidgetState extends State<GananciasWidget> {
                                   size: 50.0,
                                 ),
                                 onPressed: () async {
-                                  context.pushNamed('InicioHotelCopy');
+                                  context.pushNamed('InicioHotelCopy2');
                                 },
                               ),
                             ),

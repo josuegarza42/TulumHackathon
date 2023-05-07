@@ -387,7 +387,7 @@ class _RegistratefinalWidgetState extends State<RegistratefinalWidget>
                                     }
 
                                     context.pushNamedAuth(
-                                        'InicioHotel', mounted);
+                                        'InicioHotelCopy2', mounted);
                                   },
                                   text: 'Registrate',
                                   options: FFButtonOptions(

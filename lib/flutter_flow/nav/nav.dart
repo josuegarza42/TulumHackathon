@@ -115,13 +115,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => HoteleroP3Widget(),
         ),
         FFRoute(
-          name: 'InicioHotel',
-          path: '/inicioHotel',
-          builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'InicioHotel')
-              : InicioHotelWidget(),
-        ),
-        FFRoute(
           name: 'Registratefinal',
           path: '/registratefinal',
           builder: (context, params) => RegistratefinalWidget(),
@@ -137,13 +130,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => PagoWidget(),
         ),
         FFRoute(
-          name: 'Hoteles',
-          path: '/hoteles',
-          builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Hoteles')
-              : HotelesWidget(),
-        ),
-        FFRoute(
           name: 'Ganancias',
           path: '/ganancias',
           builder: (context, params) => GananciasWidget(),
@@ -152,13 +138,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Detalles',
           path: '/detalles',
           builder: (context, params) => DetallesWidget(),
-        ),
-        FFRoute(
-          name: 'InicioHotelCopy',
-          path: '/inicioHotelCopy',
-          builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'InicioHotelCopy')
-              : InicioHotelCopyWidget(),
         ),
         FFRoute(
           name: 'Referido',

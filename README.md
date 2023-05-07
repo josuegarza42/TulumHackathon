@@ -8,7 +8,7 @@ Prototipo :
 <br>
 Documento del proyecto: 
 <br>
-Video:https://youtu.be/c7zXiis4Nso
+Video:https://youtu.be/kFNt0XmfqKI
 <br>
 Presentacion: 
 <br>

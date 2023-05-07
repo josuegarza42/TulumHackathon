@@ -37,6 +37,7 @@ Cómo generar beneficios para las personas que promueven hoteles y hospedaje en 
 
 ## Cryptomoneda: RRCoins
 Made: Polygonscan
+ERC20
 <br>
 https://mumbai.polygonscan.com/address/0xB88452FeA584f62e7B25Eb2488Ab6c5E10454553 
 

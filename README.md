@@ -1,67 +1,31 @@
-# Room Reserve
-# Track: Tulum Crypto Challenge
-![simple house](https://user-images.githubusercontent.com/44554474/236654164-155ac423-d09f-4b43-b2cd-15b09cd70ab1.png)
-## Documentos del track:
-- https://docs.google.com/document/d/1sHS5ssKK6mXaMZJ0JTxa-UDXcJ4SS-WQVK4VCoYA81Y/edit#
-- https://docs.google.com/document/d/1sPeP2aE92SRfg20h5-oCv-4T3I9-O7XaGlnB2Zyiv4g/edit
+# Hostel
 
+A new Flutter project.
 
+## Getting Started
 
-## Entregables:
-Figma: https://www.figma.com/file/Pl0Y4TN6BoaVde7agRayws/RoomReserve?type=design&node-id=0-1&t=zz1oeYpdpQhcNOFu-0
-<br>
-Prototipo Figma : https://www.figma.com/proto/Pl0Y4TN6BoaVde7agRayws/RoomReserve?type=design&node-id=5-2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A2
-<br>
-Documentos del proyecto:<br> 
-- Sistema de recompensas: https://docs.google.com/document/d/1ymefK_3MYbbe02nAt9hB3DWOnH9lUdxYr90tSjlImmU/edit?usp=sharing
-- Ejemplo sistema de recompensas:https://docs.google.com/spreadsheets/d/1JC1LJkThqTzGYP7hV9xRIgFksGyH7wBk/edit?usp=share_link&ouid=117981008680415648889&rtpof=true&sd=true
-<br>
-Video:https://youtu.be/kFNt0XmfqKI
-<br>
-Presentacion: 
-<br>
+FlutterFlow projects are built to run on the Flutter _stable_ release.
 
+### IMPORTANT:
 
-## Tecnologías utilizadas
-- Flutter
-- FlutterFlow
-- Firebase
-- Google Spreadsheet
-- Sheety: convierte tu hoja de cálculo en una API JSON Restful
+For projects with Firestore integration, you must first run the following commands to ensure the project compiles:
 
-## Instalación
-La instalación se realiza a través de una APK. Actualmente, solo está disponible para Android, pero en un futuro podrá serlo también para sistemas Apple.
+```
+flutter pub get
+flutter packages pub run build_runner build --delete-conflicting-outputs
+```
 
-## Problematica
-Cómo generar beneficios para las personas que promueven hoteles y hospedaje en lugares turísticos. El problema es que no hay un sistema de atribución que permita identificar al usuario que promueve el hotel y su beneficio relacionado con la reserva o compra.
+This command creates the generated files that parse each Record from Firestore into a schema object.
 
-## Cryptomoneda: RRCoins
+### Getting started continued:
 
-## Definición del proyecto:
-Room Reserve es una aplicación que acerca al viajero a su próximo destino y le brinda recompensas al momento de compartir el lugar que eligió, asegurando que el hotel elegido sea uno de los destinos turísticos más populares del momento. De esta manera, el hotel y el viajero se beneficiarán mutuamente. Proponemos una plataforma que ofrecerá a sus usuarios una billetera virtual ligada a su cuenta, que les permitirá acumular recompensas en cada reserva que compartan y que un tercero reserve a través de su enlace de referencia.
+This project is a starting point for a Flutter application.
 
-## Alcance
-El alcance actual del proyecto es brindar a los usuarios una solución en reservas de estancias y en recompensas por compartir estas mismas en Tulum. El viajero tendrá la posibilidad de compartir su experiencia en el hotel y el tercero que contrate por su enlace de referencia obtendrá un beneficio en forma de descuento. El usuario que compartió su enlace obtendrá la criptomoneda en cuestión.
+A few resources to get you started if this is your first Flutter project:
 
-## Objetivos
-Crear una aplicación que acerque al usuario a su próxima reserva y que, al compartir su opinión, pueda recibir algún beneficio si un tercero reserva con su enlace de referencia.
-Permitir al hotelero subir su hotel a la aplicación.
-Brindar una criptomoneda que, de preferencia, sea de uso interno para que el usuario pueda utilizarla dentro de la aplicación y obtener un mejor precio en su próxima reserva.
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-## Objetivos a futuro
-Expandir este modelo de negocios a cualquier parte de México y del mundo.
-Que la criptomoneda creada no solo se use localmente, sino que tenga un mayor uso a nivel global.
-
-## Autores
-
-- Nombre del equipo: Studevs Lavaboys
-- Track: Tulum Crypto Challenge
-- Integrantes: 
-- Josué Israel Esquivel Garza (PM, Full stack developer, UX/UI)
-- Isai Vicente Moreno Lara (Full stack developer)
-- Carlos Santiago Parra Serralta (Full stack developer)
-- Alan Axel Castro Resendiz (Full stack developer)
-
-
-
-
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

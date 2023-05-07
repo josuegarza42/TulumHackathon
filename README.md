@@ -21,38 +21,37 @@ Flutter
 FlutterFlow
 Firebase
 Google Spreadsheet
-Sheety turns your spreadsheet into a Restful JSON API
+Sheety: convierte tu hoja de cálculo en una API JSON Restful
 
 ## Instalación
-La instalacion se realiza por medio de una apk, al momento solo la exportamos para Android, pero en un futuro podra ser para sistemas Apple.
+La instalación se realiza a través de una APK. Actualmente, solo está disponible para Android, pero en un futuro podrá serlo también para sistemas Apple.
 
 ## Problematica
-Cómo generar un beneficio para personas que promueven hoteles y hospedaje en lugares turísticos. El problema es que no hay un sistema de atribución que permita identificar el usuario que  promueve el hotel y su beneficio relacionado con el booking o compra.
+Cómo generar beneficios para las personas que promueven hoteles y hospedaje en lugares turísticos. El problema es que no hay un sistema de atribución que permita identificar al usuario que promueve el hotel y su beneficio relacionado con la reserva o compra.
 
 ## Cryptomoneda: RRCoins
 
 ## Definición del proyecto:
-Room Reserve es una aplicacion que acerca al viajero con su siguiente destino, y que obtenga recompensas al momento de compartir el lugar que eligio, que tenga seguridad de que el hotel elegido sea un destino turistico top del momento, asi el hotel y el viajero se veran beneficiados mutuamente, proponemos una plataforma que  ofrecerá a sus usuarios una wallet ligada a su cuenta que les permitirá acumular recompensas en cada reserva que compartan y que un tercero reserve por medio de su link de referido.
+Room Reserve es una aplicación que acerca al viajero a su próximo destino y le brinda recompensas al momento de compartir el lugar que eligió, asegurando que el hotel elegido sea uno de los destinos turísticos más populares del momento. De esta manera, el hotel y el viajero se beneficiarán mutuamente. Proponemos una plataforma que ofrecerá a sus usuarios una billetera virtual ligada a su cuenta, que les permitirá acumular recompensas en cada reserva que compartan y que un tercero reserve a través de su enlace de referencia.
 
 ## Alcance
-El alcance al momento es brindar a los usuarios una solucion en reservas de estadias y en recompensas por compartir estas mismas en Tulum.
-El viajero tendra la posibilidad de compartir su experiencia en el hotel y asi mismo el tercero que contrate por su link tendra un beneficio de algun descuento y el usuario que compartio su link obtendra la cryptomoneda en cuestion.
+El alcance actual del proyecto es brindar a los usuarios una solución en reservas de estancias y en recompensas por compartir estas mismas en Tulum. El viajero tendrá la posibilidad de compartir su experiencia en el hotel y el tercero que contrate por su enlace de referencia obtendrá un beneficio en forma de descuento. El usuario que compartió su enlace obtendrá la criptomoneda en cuestión.
 
 ## Objetivos
-Crear una aplicacion que acerque al usuario con su siguiente reservacion, y que este al compartir su reseña pueda recibir algun beneficio si un tercero reserva con su link de referido.
-El hotelero pueda subir su hotel a la aplicacion.
-Brindar una cryptomoneda, que de preferencia sea de uso interno para que el usuario pueda usarla dentro de la app y conseguir un mejor precio en su siguiente reserva
+Crear una aplicación que acerque al usuario a su próxima reserva y que, al compartir su opinión, pueda recibir algún beneficio si un tercero reserva con su enlace de referencia.
+Permitir al hotelero subir su hotel a la aplicación.
+Brindar una criptomoneda que, de preferencia, sea de uso interno para que el usuario pueda utilizarla dentro de la aplicación y obtener un mejor precio en su próxima reserva.
 
 ## Objetivos a futuro
-Migrar este modelo de negocios a cualquier parte de Mexico y el mundo.
-Que la moneda creada no solo se use localmente y que tenga un mayor uso a nivel global.
+Expandir este modelo de negocios a cualquier parte de México y del mundo.
+Que la criptomoneda creada no solo se use localmente, sino que tenga un mayor uso a nivel global.
 
 ## Autores
 
 - Nombre del equipo: Studevs Lavaboys
 - Track: Tulum Crypto Challenge
 - Integrantes: 
-- Josue Israel Esquivel Garza (PM, Full stack developer, UX/UI)
+- Josué Israel Esquivel Garza (PM, Full stack developer, UX/UI)
 - Isai Vicente Moreno Lara (Full stack developer)
 - Carlos Santiago Parra Serralta (Full stack developer)
 - Alan Axel Castro Resendiz (Full stack developer)

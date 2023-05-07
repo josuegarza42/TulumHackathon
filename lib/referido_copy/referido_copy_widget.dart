@@ -1,4 +1,5 @@
 import '/backend/api_requests/api_calls.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_credit_card_form.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
@@ -16,11 +17,10 @@ export 'referido_copy_model.dart';
 class ReferidoCopyWidget extends StatefulWidget {
   const ReferidoCopyWidget({
     Key? key,
-    int? indice,
-  })  : this.indice = indice ?? 0,
-        super(key: key);
+    required this.indice,
+  }) : super(key: key);
 
-  final int indice;
+  final HotelesRecord? indice;
 
   @override
   _ReferidoCopyWidgetState createState() => _ReferidoCopyWidgetState();
@@ -242,14 +242,7 @@ class _ReferidoCopyWidgetState extends State<ReferidoCopyWidget>
                                                   final textVerHotelesResponse =
                                                       snapshot.data!;
                                                   return Text(
-                                                    (VerHotelesCall.nombre(
-                                                      textVerHotelesResponse
-                                                          .jsonBody,
-                                                    ) as List)
-                                                        .map<String>(
-                                                            (s) => s.toString())
-                                                        .toList()[widget.indice]
-                                                        .toString(),
+                                                    widget.indice!.nombre!,
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -318,14 +311,7 @@ class _ReferidoCopyWidgetState extends State<ReferidoCopyWidget>
                                                   final textVerHotelesResponse =
                                                       snapshot.data!;
                                                   return Text(
-                                                    (VerHotelesCall.descripcion(
-                                                      textVerHotelesResponse
-                                                          .jsonBody,
-                                                    ) as List)
-                                                        .map<String>(
-                                                            (s) => s.toString())
-                                                        .toList()[widget.indice]
-                                                        .toString(),
+                                                    widget.indice!.decripcion!,
                                                     textAlign: TextAlign.center,
                                                     style: FlutterFlowTheme.of(
                                                             context)

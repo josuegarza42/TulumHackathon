@@ -329,7 +329,7 @@ class _IndexWidgetState extends State<IndexWidget>
                             16.0, 12.0, 16.0, 0.0),
                         child: FFButtonWidget(
                           onPressed: () async {
-                            context.pushNamed('InicioHotelCopy2');
+                            context.pushNamed('login');
                           },
                           text: 'Inicio de sesión',
                           options: FFButtonOptions(

@@ -21,3 +21,9 @@ export '/hoteles/inicio_hotel_copy2/inicio_hotel_copy2_widget.dart'
 export '/referido_copy/referido_copy_widget.dart' show ReferidoCopyWidget;
 export '/hospedaje/hospedaje_widget.dart' show HospedajeWidget;
 export '/fecha/fecha_widget.dart' show FechaWidget;
+export '/perfil/profile_nuevo/profile_nuevo_widget.dart'
+    show ProfileNuevoWidget;
+export '/payment_nuevo/payment_nuevo_widget.dart' show PaymentNuevoWidget;
+export '/payconfirmed/payconfirmed_widget.dart' show PayconfirmedWidget;
+export '/detalleshotel/detalleshotel_widget.dart' show DetalleshotelWidget;
+export '/iniciasesion/login/login_widget.dart' show LoginWidget;

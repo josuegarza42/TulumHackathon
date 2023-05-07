@@ -241,16 +241,20 @@ class _GananciasWidgetState extends State<GananciasWidget> {
                       children: [
                         Container(
                           width: MediaQuery.of(context).size.width * 0.9,
-                          height: 355.0,
+                          height: 378.0,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
                           ),
-                          child: Image.asset(
-                            'assets/images/Group_706.png',
-                            width: 100.0,
-                            height: 100.0,
-                            fit: BoxFit.cover,
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 20.0, 0.0, 0.0),
+                            child: Image.asset(
+                              'assets/images/Group_706.png',
+                              width: 100.0,
+                              height: 120.0,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
                       ],

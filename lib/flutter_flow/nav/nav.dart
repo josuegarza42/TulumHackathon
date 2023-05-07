@@ -149,13 +149,18 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           path: '/inicioHotelCopy2',
           builder: (context, params) => params.isEmpty
               ? NavBarPage(initialPage: 'InicioHotelCopy2')
-              : InicioHotelCopy2Widget(),
+              : InicioHotelCopy2Widget(
+                  visiblea: params.getParam('visiblea', ParamType.bool),
+                ),
         ),
         FFRoute(
           name: 'ReferidoCopy',
           path: '/referidoCopy',
+          asyncParams: {
+            'indice': getDoc(['Hoteles'], HotelesRecord.serializer),
+          },
           builder: (context, params) => ReferidoCopyWidget(
-            indice: params.getParam('indice', ParamType.int),
+            indice: params.getParam('indice', ParamType.Document),
           ),
         ),
         FFRoute(
@@ -167,6 +172,31 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'fecha',
           path: '/fecha',
           builder: (context, params) => FechaWidget(),
+        ),
+        FFRoute(
+          name: 'profileNuevo',
+          path: '/profileNuevo',
+          builder: (context, params) => ProfileNuevoWidget(),
+        ),
+        FFRoute(
+          name: 'paymentNuevo',
+          path: '/paymentNuevo',
+          builder: (context, params) => PaymentNuevoWidget(),
+        ),
+        FFRoute(
+          name: 'PAYCONFIRMED',
+          path: '/payconfirmed',
+          builder: (context, params) => PayconfirmedWidget(),
+        ),
+        FFRoute(
+          name: 'detalleshotel',
+          path: '/detalleshotel',
+          builder: (context, params) => DetalleshotelWidget(),
+        ),
+        FFRoute(
+          name: 'login',
+          path: '/login',
+          builder: (context, params) => LoginWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       urlPathStrategy: UrlPathStrategy.path,

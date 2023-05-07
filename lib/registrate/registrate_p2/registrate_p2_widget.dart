@@ -455,7 +455,7 @@ class _RegistrateP2WidgetState extends State<RegistrateP2Widget> {
                             if (FFAppState().isHotelero == true) {
                               context.pushNamed('hoteleroP3');
                             } else {
-                              context.pushNamed('registrateP2');
+                              context.pushNamed('Registratefinal');
                             }
                           },
                           text: 'Siguiente',

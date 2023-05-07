@@ -6,6 +6,7 @@ import '../auth/firebase_auth/auth_util.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 
 import 'schema/usuario_record.dart';
+import 'schema/hoteles_record.dart';
 import 'schema/serializers.dart';
 
 export 'dart:async' show StreamSubscription;
@@ -14,6 +15,7 @@ export 'schema/index.dart';
 export 'schema/serializers.dart';
 
 export 'schema/usuario_record.dart';
+export 'schema/hoteles_record.dart';
 
 /// Functions to query UsuarioRecords (as a Stream and as a Future).
 Future<int> queryUsuarioRecordCount({
@@ -61,6 +63,58 @@ Future<FFFirestorePage<UsuarioRecord>> queryUsuarioRecordPage({
     queryCollectionPage(
       UsuarioRecord.collection,
       UsuarioRecord.serializer,
+      queryBuilder: queryBuilder,
+      nextPageMarker: nextPageMarker,
+      pageSize: pageSize,
+      isStream: isStream,
+    );
+
+/// Functions to query HotelesRecords (as a Stream and as a Future).
+Future<int> queryHotelesRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      HotelesRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<HotelesRecord>> queryHotelesRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      HotelesRecord.collection,
+      HotelesRecord.serializer,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<HotelesRecord>> queryHotelesRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      HotelesRecord.collection,
+      HotelesRecord.serializer,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<FFFirestorePage<HotelesRecord>> queryHotelesRecordPage({
+  Query Function(Query)? queryBuilder,
+  DocumentSnapshot? nextPageMarker,
+  required int pageSize,
+  required bool isStream,
+}) =>
+    queryCollectionPage(
+      HotelesRecord.collection,
+      HotelesRecord.serializer,
       queryBuilder: queryBuilder,
       nextPageMarker: nextPageMarker,
       pageSize: pageSize,

@@ -178,8 +178,8 @@ class _CreaHotelWidgetState extends State<CreaHotelWidget> {
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 10.0, 0.0, 0.0),
                                 child: FFButtonWidget(
-                                  onPressed: () {
-                                    print('Button pressed ...');
+                                  onPressed: () async {
+                                    context.pushNamed('Hospedaje');
                                   },
                                   text: 'Registrar Hotel',
                                   options: FFButtonOptions(

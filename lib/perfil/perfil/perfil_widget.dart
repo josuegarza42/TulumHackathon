@@ -73,15 +73,15 @@ class _PerfilWidgetState extends State<PerfilWidget> {
                             color: Color(0xFF181818),
                             size: 30.0,
                           ),
-                          onPressed: () {
-                            print('IconButton pressed ...');
+                          onPressed: () async {
+                            context.pushNamed('InicioHotelCopy2');
                           },
                         ),
                       ),
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(270.0, 25.0, 0.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(250.0, 25.0, 0.0, 0.0),
                       child: FFButtonWidget(
                         onPressed: () async {
                           GoRouter.of(context).prepareAuthEvent();

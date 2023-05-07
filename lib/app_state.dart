@@ -86,6 +86,30 @@ class FFAppState extends ChangeNotifier {
   set visible5(bool _value) {
     _visible5 = _value;
   }
+
+  bool _visible6 = false;
+  bool get visible6 => _visible6;
+  set visible6(bool _value) {
+    _visible6 = _value;
+  }
+
+  List<int> _Lista = [0, 1, 2, 3, 4];
+  List<int> get Lista => _Lista;
+  set Lista(List<int> _value) {
+    _Lista = _value;
+  }
+
+  void addToLista(int _value) {
+    _Lista.add(_value);
+  }
+
+  void removeFromLista(int _value) {
+    _Lista.remove(_value);
+  }
+
+  void removeAtIndexFromLista(int _index) {
+    _Lista.removeAt(_index);
+  }
 }
 
 LatLng? _latLngFromString(String? val) {

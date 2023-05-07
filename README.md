@@ -10,6 +10,7 @@ Prototipo Figma : https://www.figma.com/proto/Pl0Y4TN6BoaVde7agRayws/RoomReserve
 <br>
 Documento del proyecto: 
 Sistema de recompensas: https://docs.google.com/document/d/1ymefK_3MYbbe02nAt9hB3DWOnH9lUdxYr90tSjlImmU/edit?usp=sharing
+<br>
 Ejemplo sistema de recompensas:https://docs.google.com/spreadsheets/d/1JC1LJkThqTzGYP7hV9xRIgFksGyH7wBk/edit?usp=share_link&ouid=117981008680415648889&rtpof=true&sd=true
 <br>
 Video:https://youtu.be/kFNt0XmfqKI

@@ -2,7 +2,10 @@
 # Track: Tulum Crypto Challenge
 ![simple house](https://user-images.githubusercontent.com/44554474/236654164-155ac423-d09f-4b43-b2cd-15b09cd70ab1.png)
 ## Documentos del track:
-https://docs.google.com/document/d/1sHS5ssKK6mXaMZJ0JTxa-UDXcJ4SS-WQVK4VCoYA81Y/edit#
+- https://docs.google.com/document/d/1sHS5ssKK6mXaMZJ0JTxa-UDXcJ4SS-WQVK4VCoYA81Y/edit#
+- https://docs.google.com/document/d/1sPeP2aE92SRfg20h5-oCv-4T3I9-O7XaGlnB2Zyiv4g/edit
+
+
 
 ## Entregables:
 Figma: https://www.figma.com/file/Pl0Y4TN6BoaVde7agRayws/RoomReserve?type=design&node-id=0-1&t=zz1oeYpdpQhcNOFu-0

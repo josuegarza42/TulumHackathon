@@ -39,7 +39,10 @@ Cómo generar beneficios para las personas que promueven hoteles y hospedaje en 
 Made: Polygonscan
 ERC20
 <br>
-https://mumbai.polygonscan.com/address/0xB88452FeA584f62e7B25Eb2488Ab6c5E10454553 
+- [https://mumbai.polygonscan.com/address/0xB88452FeA584f62e7B25Eb2488Ab6c5E10454553 ](https://mumbai.polygonscan.com/token/0x21117b0ac459482b091904d279af1cd430447547
+Pagina del Token RRCoin)
+- https://mumbai.polygonscan.com/address/0x21117b0ac459482b091904d279af1cd430447547
+Pagina del Smart Contract para crear RRCoin
 
 ## Definición del proyecto:
 Room Reserve es una aplicación que acerca al viajero a su próximo destino y le brinda recompensas al momento de compartir el lugar que eligió, asegurando que el hotel elegido sea uno de los destinos turísticos más populares del momento. De esta manera, el hotel y el viajero se beneficiarán mutuamente. Proponemos una plataforma que ofrecerá a sus usuarios una billetera virtual ligada a su cuenta, que les permitirá acumular recompensas en cada reserva que compartan y que un tercero reserve a través de su enlace de referencia.

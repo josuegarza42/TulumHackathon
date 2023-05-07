@@ -36,6 +36,9 @@ La instalación se realiza a través de una APK. Actualmente, solo está disponi
 Cómo generar beneficios para las personas que promueven hoteles y hospedaje en lugares turísticos. El problema es que no hay un sistema de atribución que permita identificar al usuario que promueve el hotel y su beneficio relacionado con la reserva o compra.
 
 ## Cryptomoneda: RRCoins
+Made: Polygonscan
+<br>
+https://mumbai.polygonscan.com/address/0xB88452FeA584f62e7B25Eb2488Ab6c5E10454553 
 
 ## Definición del proyecto:
 Room Reserve es una aplicación que acerca al viajero a su próximo destino y le brinda recompensas al momento de compartir el lugar que eligió, asegurando que el hotel elegido sea uno de los destinos turísticos más populares del momento. De esta manera, el hotel y el viajero se beneficiarán mutuamente. Proponemos una plataforma que ofrecerá a sus usuarios una billetera virtual ligada a su cuenta, que les permitirá acumular recompensas en cada reserva que compartan y que un tercero reserve a través de su enlace de referencia.

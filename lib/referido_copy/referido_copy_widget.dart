@@ -1229,6 +1229,21 @@ class _ReferidoCopyWidgetState extends State<ReferidoCopyWidget>
                                           setState(() {
                                             FFAppState().visible2 = false;
                                           });
+                                          setState(() {
+                                            FFAppState().visible3 = true;
+                                          });
+                                          if (animationsMap[
+                                                  'columnOnActionTriggerAnimation3'] !=
+                                              null) {
+                                            setState(() =>
+                                                hasColumnTriggered3 = true);
+                                            SchedulerBinding.instance
+                                                .addPostFrameCallback((_) async =>
+                                                    await animationsMap[
+                                                            'columnOnActionTriggerAnimation3']!
+                                                        .controller
+                                                        .forward(from: 0.0));
+                                          }
                                         },
                                         child: Image.asset(
                                           'assets/images/Button.png',
@@ -1250,10 +1265,42 @@ class _ReferidoCopyWidgetState extends State<ReferidoCopyWidget>
                 ).animateOnActionTrigger(
                     animationsMap['columnOnActionTriggerAnimation2']!,
                     hasBeenTriggered: hasColumnTriggered2),
-              if (FFAppState().visible2 == true)
-                Column(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [],
+              if (FFAppState().visible3 == true)
+                InkWell(
+                  splashColor: Colors.transparent,
+                  focusColor: Colors.transparent,
+                  hoverColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () async {
+                    setState(() {
+                      FFAppState().visible3 = false;
+                    });
+                    if (animationsMap['columnOnActionTriggerAnimation3'] !=
+                        null) {
+                      animationsMap['columnOnActionTriggerAnimation3']!
+                          .controller
+                          .stop();
+                    }
+                  },
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Container(
+                        width: MediaQuery.of(context).size.width * 1.0,
+                        height: MediaQuery.of(context).size.height * 1.0,
+                        decoration: BoxDecoration(
+                          color:
+                              FlutterFlowTheme.of(context).secondaryBackground,
+                          image: DecorationImage(
+                            fit: BoxFit.cover,
+                            image: Image.asset(
+                              'assets/images/Booking.png',
+                            ).image,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ).animateOnActionTrigger(
                     animationsMap['columnOnActionTriggerAnimation3']!,
                     hasBeenTriggered: hasColumnTriggered3),

@@ -69,9 +69,9 @@ class FFAppState extends ChangeNotifier {
     _visible2 = _value;
   }
 
-  String _visible3 = '';
-  String get visible3 => _visible3;
-  set visible3(String _value) {
+  bool _visible3 = false;
+  bool get visible3 => _visible3;
+  set visible3(bool _value) {
     _visible3 = _value;
   }
 }

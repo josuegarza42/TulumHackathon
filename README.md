@@ -6,7 +6,8 @@
 - https://docs.google.com/document/d/1sPeP2aE92SRfg20h5-oCv-4T3I9-O7XaGlnB2Zyiv4g/edit
 
 ## Entregables:
-EL CODIGO SE ENCUENTRA EN LA BRANCH: Flutterflow
+# EL CODIGO SE ENCUENTRA EN LA BRANCH: Flutterflow
+<br>
 Figma: https://www.figma.com/file/Pl0Y4TN6BoaVde7agRayws/RoomReserve?type=design&node-id=0-1&t=zz1oeYpdpQhcNOFu-0
 <br>
 Prototipo Figma : https://www.figma.com/proto/Pl0Y4TN6BoaVde7agRayws/RoomReserve?type=design&node-id=5-2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A2

@@ -19,7 +19,7 @@ Documentos del proyecto:<br>
 <br>
 Video:https://youtu.be/kFNt0XmfqKI
 <br>
-Presentacion: 
+Presentacion: https://www.canva.com/design/DAFiMg7GVas/sDXqr3zO9oOfp_PeBZfH_g/edit?utm_content=DAFiMg7GVas&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 <br>
 
 

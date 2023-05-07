@@ -473,12 +473,12 @@ class _InicioHotelCopy2WidgetState extends State<InicioHotelCopy2Widget>
                                                                     alignment:
                                                                         AlignmentDirectional(
                                                                             -1.53,
-                                                                            -0.7),
+                                                                            -1.0),
                                                                     child:
                                                                         Padding(
                                                                       padding: EdgeInsetsDirectional.fromSTEB(
                                                                           40.0,
-                                                                          220.0,
+                                                                          180.0,
                                                                           0.0,
                                                                           10.0),
                                                                       child:
@@ -494,35 +494,6 @@ class _InicioHotelCopy2WidgetState extends State<InicioHotelCopy2Widget>
                                                                               color: Colors.white,
                                                                               fontSize: 24.0,
                                                                               fontWeight: FontWeight.w800,
-                                                                            ),
-                                                                      ),
-                                                                    ),
-                                                                  ),
-                                                                  Align(
-                                                                    alignment:
-                                                                        AlignmentDirectional(
-                                                                            0.0,
-                                                                            -0.6),
-                                                                    child:
-                                                                        Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                                                          20.0,
-                                                                          260.0,
-                                                                          20.0,
-                                                                          0.0),
-                                                                      child:
-                                                                          AutoSizeText(
-                                                                        listViewHotelesRecord
-                                                                            .decripcion!,
-                                                                        textAlign:
-                                                                            TextAlign.center,
-                                                                        style: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .override(
-                                                                              fontFamily: 'Poppins',
-                                                                              color: Colors.white,
-                                                                              fontSize: 14.0,
-                                                                              fontWeight: FontWeight.normal,
                                                                             ),
                                                                       ),
                                                                     ),
@@ -599,6 +570,51 @@ class _InicioHotelCopy2WidgetState extends State<InicioHotelCopy2Widget>
                                                                           ),
                                                                           borderRadius:
                                                                               BorderRadius.circular(8.0),
+                                                                        ),
+                                                                      ),
+                                                                    ),
+                                                                  ),
+                                                                  Align(
+                                                                    alignment:
+                                                                        AlignmentDirectional(
+                                                                            0.0,
+                                                                            0.35),
+                                                                    child:
+                                                                        Container(
+                                                                      width: MediaQuery.of(context)
+                                                                              .size
+                                                                              .width *
+                                                                          1.0,
+                                                                      height: MediaQuery.of(context)
+                                                                              .size
+                                                                              .height *
+                                                                          0.07,
+                                                                      decoration:
+                                                                          BoxDecoration(
+                                                                        color: Color(
+                                                                            0x00FFFFFF),
+                                                                      ),
+                                                                      child:
+                                                                          SingleChildScrollView(
+                                                                        child:
+                                                                            Column(
+                                                                          mainAxisSize:
+                                                                              MainAxisSize.max,
+                                                                          children: [
+                                                                            Align(
+                                                                              alignment: AlignmentDirectional(0.0, -1.0),
+                                                                              child: AutoSizeText(
+                                                                                listViewHotelesRecord.decripcion!,
+                                                                                textAlign: TextAlign.center,
+                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                      fontFamily: 'Poppins',
+                                                                                      color: Colors.white,
+                                                                                      fontSize: 14.0,
+                                                                                      fontWeight: FontWeight.normal,
+                                                                                    ),
+                                                                              ),
+                                                                            ),
+                                                                          ],
                                                                         ),
                                                                       ),
                                                                     ),

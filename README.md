@@ -8,7 +8,7 @@ Prototipo :
 <br>
 Documento del proyecto: 
 <br>
-Video:
+Video:https://youtu.be/c7zXiis4Nso
 <br>
 Presentacion: 
 <br>
@@ -39,7 +39,7 @@ Figma:
 
 - Nombre del equipo: Studevs Lavaboys
 - Track: Tulum Crypto Challenge
-- Intgrantes: 
+- Integrantes: 
 - Josue Israel Esquivel Garza (PM, Full stack developer, UX/UI)
 - Isai Vicente Moreno Lara (Full stack developer)
 - Carlos Santiago Parra Serralta (Full stack developer)

@@ -129,8 +129,8 @@ class _NavBarPageState extends State<NavBarPage> {
   @override
   Widget build(BuildContext context) {
     final tabs = {
-      'Perfil': PerfilWidget(),
       'InicioHotelCopy2': InicioHotelCopy2Widget(),
+      'profileNuevo': ProfileNuevoWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
     return Scaffold(
@@ -150,7 +150,7 @@ class _NavBarPageState extends State<NavBarPage> {
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.home_outlined,
+              Icons.location_pin,
               size: 24.0,
             ),
             label: 'Home',
@@ -158,7 +158,7 @@ class _NavBarPageState extends State<NavBarPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.location_pin,
+              Icons.home_outlined,
               size: 24.0,
             ),
             label: 'Home',

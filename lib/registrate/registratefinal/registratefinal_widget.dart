@@ -1,4 +1,5 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -385,6 +386,19 @@ class _RegistratefinalWidgetState extends State<RegistratefinalWidget>
                                     if (user == null) {
                                       return;
                                     }
+
+                                    final usuarioCreateData =
+                                        createUsuarioRecordData(
+                                      email: '',
+                                      displayName: '',
+                                      wallet: '',
+                                      password: '',
+                                      photoUrl: '',
+                                      uid: '',
+                                    );
+                                    await UsuarioRecord.collection
+                                        .doc(user.uid)
+                                        .update(usuarioCreateData);
 
                                     context.pushNamedAuth(
                                         'InicioHotelCopy2', mounted);

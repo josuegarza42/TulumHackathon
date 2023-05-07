@@ -111,6 +111,13 @@ class _$UsuarioRecordSerializer implements StructuredSerializer<UsuarioRecord> {
         ..add(serializers.serialize(value,
             specifiedType: const FullType(String)));
     }
+    value = object.password;
+    if (value != null) {
+      result
+        ..add('password')
+        ..add(serializers.serialize(value,
+            specifiedType: const FullType(String)));
+    }
     value = object.ffRef;
     if (value != null) {
       result
@@ -186,6 +193,10 @@ class _$UsuarioRecordSerializer implements StructuredSerializer<UsuarioRecord> {
           result.wallet = serializers.deserialize(value,
               specifiedType: const FullType(String)) as String?;
           break;
+        case 'password':
+          result.password = serializers.deserialize(value,
+              specifiedType: const FullType(String)) as String?;
+          break;
         case 'Document__Reference__Field':
           result.ffRef = serializers.deserialize(value,
               specifiedType: const FullType(DocumentReference, const [
@@ -227,6 +238,8 @@ class _$UsuarioRecord extends UsuarioRecord {
   @override
   final String? wallet;
   @override
+  final String? password;
+  @override
   final DocumentReference<Object?>? ffRef;
 
   factory _$UsuarioRecord([void Function(UsuarioRecordBuilder)? updates]) =>
@@ -246,6 +259,7 @@ class _$UsuarioRecord extends UsuarioRecord {
       this.cuentadeBanco,
       this.tokens,
       this.wallet,
+      this.password,
       this.ffRef})
       : super._();
 
@@ -273,6 +287,7 @@ class _$UsuarioRecord extends UsuarioRecord {
         cuentadeBanco == other.cuentadeBanco &&
         tokens == other.tokens &&
         wallet == other.wallet &&
+        password == other.password &&
         ffRef == other.ffRef;
   }
 
@@ -292,6 +307,7 @@ class _$UsuarioRecord extends UsuarioRecord {
     _$hash = $jc(_$hash, cuentadeBanco.hashCode);
     _$hash = $jc(_$hash, tokens.hashCode);
     _$hash = $jc(_$hash, wallet.hashCode);
+    _$hash = $jc(_$hash, password.hashCode);
     _$hash = $jc(_$hash, ffRef.hashCode);
     _$hash = $jf(_$hash);
     return _$hash;
@@ -313,6 +329,7 @@ class _$UsuarioRecord extends UsuarioRecord {
           ..add('cuentadeBanco', cuentadeBanco)
           ..add('tokens', tokens)
           ..add('wallet', wallet)
+          ..add('password', password)
           ..add('ffRef', ffRef))
         .toString();
   }
@@ -375,6 +392,10 @@ class UsuarioRecordBuilder
   String? get wallet => _$this._wallet;
   set wallet(String? wallet) => _$this._wallet = wallet;
 
+  String? _password;
+  String? get password => _$this._password;
+  set password(String? password) => _$this._password = password;
+
   DocumentReference<Object?>? _ffRef;
   DocumentReference<Object?>? get ffRef => _$this._ffRef;
   set ffRef(DocumentReference<Object?>? ffRef) => _$this._ffRef = ffRef;
@@ -399,6 +420,7 @@ class UsuarioRecordBuilder
       _cuentadeBanco = $v.cuentadeBanco;
       _tokens = $v.tokens;
       _wallet = $v.wallet;
+      _password = $v.password;
       _ffRef = $v.ffRef;
       _$v = null;
     }
@@ -435,6 +457,7 @@ class UsuarioRecordBuilder
             cuentadeBanco: cuentadeBanco,
             tokens: tokens,
             wallet: wallet,
+            password: password,
             ffRef: ffRef);
     replace(_$result);
     return _$result;

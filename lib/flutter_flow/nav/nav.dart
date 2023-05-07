@@ -85,9 +85,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'Perfil',
           path: '/perfil',
-          builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Perfil')
-              : PerfilWidget(),
+          builder: (context, params) => PerfilWidget(),
         ),
         FFRoute(
           name: 'AppSettings',
@@ -176,7 +174,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'profileNuevo',
           path: '/profileNuevo',
-          builder: (context, params) => ProfileNuevoWidget(),
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'profileNuevo')
+              : ProfileNuevoWidget(),
         ),
         FFRoute(
           name: 'paymentNuevo',

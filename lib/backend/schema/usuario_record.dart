@@ -45,6 +45,8 @@ abstract class UsuarioRecord
 
   String? get wallet;
 
+  String? get password;
+
   @BuiltValueField(wireName: kDocumentReferenceField)
   DocumentReference? get ffRef;
   DocumentReference get reference => ffRef!;
@@ -60,7 +62,8 @@ abstract class UsuarioRecord
     ..banco = ''
     ..cuentadeBanco = ''
     ..tokens = 0.0
-    ..wallet = '';
+    ..wallet = ''
+    ..password = '';
 
   static CollectionReference get collection =>
       FirebaseFirestore.instance.collection('Usuario');
@@ -97,6 +100,7 @@ Map<String, dynamic> createUsuarioRecordData({
   String? cuentadeBanco,
   double? tokens,
   String? wallet,
+  String? password,
 }) {
   final firestoreData = serializers.toFirestore(
     UsuarioRecord.serializer,
@@ -114,7 +118,8 @@ Map<String, dynamic> createUsuarioRecordData({
         ..banco = banco
         ..cuentadeBanco = cuentadeBanco
         ..tokens = tokens
-        ..wallet = wallet,
+        ..wallet = wallet
+        ..password = password,
     ),
   );
 
